@@ -6,6 +6,6 @@ This example shows how to use [Eslint,Prettier and Lint staged with React].
 
 ```bash
 Git clone
-# or
+
 yarn or yarn install
 ```

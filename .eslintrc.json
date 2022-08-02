@@ -41,7 +41,6 @@
         "endOfLine": "auto"
       }
     ],
-    "react/button-has-type": "off",
     // Based Rule
     "consistent-return": "off",
     "default-param-last": "off",
@@ -57,7 +56,7 @@
       }
     ],
     "import/no-extraneous-dependencies": [
-      "off",
+      "warn",
       {
         "devDependencies": false,
         "optionalDependencies": false,

@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import Footer from 'common/layout/Footer';
+import Header from 'common/layout/Header';
+import Card from 'components/Card';
 
 import reactLogo from './assets/react.svg';
 
@@ -9,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -19,9 +23,7 @@ function App() {
       </div>
       <h1>Vite + React + ESLINT + PRETTIER + HUSKY</h1>
       <div className="card">
-        <button type="button" onClick={() => setCount((c) => c + 1)}>
-          count is {count}
-        </button>
+        <button onClick={() => setCount((c) => c + 1)}>count is {count}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -33,6 +35,8 @@ function App() {
         mollitia maiores officiis. Reprehenderit dolores deleniti expedita eius,
         temporibus illum totam eum!
       </p>
+      <Card />
+      <Footer />
     </div>
   );
 }

@@ -41,6 +41,7 @@
         "endOfLine": "auto"
       }
     ],
+    "react/button-has-type": "off",
     // Based Rule
     "consistent-return": "off",
     "default-param-last": "off",
@@ -56,7 +57,7 @@
       }
     ],
     "import/no-extraneous-dependencies": [
-      "warn",
+      "off",
       {
         "devDependencies": false,
         "optionalDependencies": false,
@@ -165,7 +166,8 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
       },
       "alias": {
         "map": [
